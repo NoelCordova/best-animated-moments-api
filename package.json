@@ -1,0 +1,17 @@
+{
+  "name": "best-animated-moments-api",
+  "version": "0.1.0",
+  "description": "A personal database for the most hilarious moments of cartoons, anime, movies and videogames!",
+  "author": "Noel Espino Cordova <noelespinocordova@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "express",
+    "vercel"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.3",
+    "morgan": "^1.10.0"
+  }
+}
