@@ -1,4 +1,5 @@
 const express = require('express');
+
 const app = express();
 
 const moments = require('./moments');
@@ -17,7 +18,7 @@ app.all('*', (req, res) => {
   const url = req.originalUrl;
 
   res.status(404).json({
-    message: `${url} - not found`
+    message: `${url} - not found`,
   });
 });
 

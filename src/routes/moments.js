@@ -14,23 +14,22 @@ router.get('/', (req, res) => {
       .then(() => {
         MomentModel.find({}, (error, docs) => {
           if (error) {
-            res.json({error});
+            res.json({ error });
           }
-  
-          let moments = docs;
-  
-          res.json({moments});
+
+          const moments = docs;
+
+          res.json({ moments });
         });
       })
-      .catch(error => {
-        res.json({error});
+      .catch((error) => {
+        res.json({ error });
       });
   } else {
     res.status(401).json({
-      error: "No autorizado",
-    })
+      error: 'No autorizado',
+    });
   }
-
 });
 
 module.exports = router;
