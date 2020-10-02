@@ -6,7 +6,7 @@ const moments = require('./moments');
 const labels = require('./labels');
 
 app.all('/', (req, res) => {
-  res.json('best-animated-moments-api');
+  res.json('best-animated-moments-api - v0.2.0');
 });
 
 app.all('/ping', (req, res) => {
